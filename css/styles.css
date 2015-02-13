@@ -105,16 +105,10 @@ h1 {
 
 #mapcontainer {
 	float: left;
-	height: 600px;
+	height: 500px;
 	width: 80%;
 	margin: 0 auto;
 }
-
-
-#bubblecontainer {
-	float: left;
-}
-
 
 #bubblecontainer {
 	float: left;
@@ -124,6 +118,8 @@ h1 {
 
 #infobox {
 	text-align: center;
+	overflow: visible;
+	height: 50px;
 	padding: 20px 10px;
 	font-weight: bold;
 }

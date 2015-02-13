@@ -5,7 +5,7 @@ define(["d3"],function(d3) {
 		infobox.text(infobox.attr("value"));
 		
 		var bubble = d3.select("#bubbleview");
-		bubble.style("height",d3.select("#mapcontainer").style("height"));
+		bubble.style("height", parseInt(d3.select("#mapcontainer").style("height")) - parseInt(infobox.style("height")));
 		bubble.style("width",d3.select("#bubblecontainer").style("width"));
 		bubble.style("background-color","#ffffff");
 		
