@@ -1,4 +1,5 @@
-# Neighbours | A Visualisation of Who People Don't Like
+# Neighbours 
+A Visualisation of Who People Don't Like
 ## Overview
 A tool to view data from the [World Values Survey Association](http://www.worldvaluessurvey.org/wvs.jsp).
 It was written using the following libraries: **D3.js**, **jQuery**, **RequireJS**, **TopoJSON** and **Datamaps**.
