@@ -1,7 +1,7 @@
 # Neighbours | A Visualisation of Who People Don't Like
 ## Overview
 A tool to view data from the [World Values Survey Association](http://www.worldvaluessurvey.org/wvs.jsp).
-It was written using the following libraries: _D3_, _jQuery_, RequireJS, _TopoJSON_ and _Datamaps_.
+It was written using the following libraries: **D3.js**, **jQuery**, **RequireJS**, **TopoJSON** and **Datamaps**.
 ## Technical
 For development purposes use `js/main.js` instead of `js/main.min.js`.
 

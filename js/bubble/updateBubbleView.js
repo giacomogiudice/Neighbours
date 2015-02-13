@@ -31,7 +31,7 @@ define(["d3","data"],function(d3,data) {
 		var force = d3.layout.force()
 		.nodes(circles)
 		.size([w, h])
-		.charge(function(d) {return -5 * d.radius})
+		.charge(function(d) {return -6 * d.radius})
 		.on("tick", tick)
 		.start(); 
 

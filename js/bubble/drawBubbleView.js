@@ -12,8 +12,6 @@ define(["d3"],function(d3) {
 		//Draw tooltip
 		d3.select("#bubblecontainer").append("div")
 		.attr("id","bubblelabel")
-		.attr("class","hoverlabel ghost")
-		.style("position", "absolute")
-		.style("z-index", "10")
+		.attr("class","hoverlabel floater ghost")
 	};
 });
