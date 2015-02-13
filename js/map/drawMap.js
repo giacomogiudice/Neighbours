@@ -1,4 +1,5 @@
-define(["require","jquery","d3","topojson","datamaps","data"],function(require,$,d3,topojson,Datamap,data) {
+define(["require","jquery","d3","topojson","datamaps","bubble/updateBubbleView","data"],
+	function(require,$,d3,topojson,Datamap,updateBubbleView,data) {
 	var hoverLabel = function(geo,content) {
 		if(content === null || !content.value) {
 			return ['<div class="hoverlabel">',
@@ -13,7 +14,7 @@ define(["require","jquery","d3","topojson","datamaps","data"],function(require,$
 		else
 		{
 			return ['<div class="hoverlabel">',
-			geo.properties.name, //" ", content.value,
+			geo.properties.name,
 			'</div>'].join('');
 		}
 		
@@ -48,7 +49,8 @@ define(["require","jquery","d3","topojson","datamaps","data"],function(require,$
 
 	//add onlick event
 	map.svg.selectAll('.datamaps-subunit').on('click', function(geo) {
-		console.log(geo.properties.name);
+		global.country = geo.properties.name;
+		updateBubbleView();
 	});
 	return map;
 

@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>
-Neighbours | A Visualisation of Who You Don't Like
-</title>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+	<title>
+		Neighbours | A Visualisation of Who We Don't Like
+	</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
-<script src="js/global.js"></script>
-<!-- <script data-main="js/main.js" src="js/lib/require.js"></script> -->
-<script data-main="js/main.min.js" src="js/lib/require.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script src="js/global.js"></script>
+	<script data-main="js/main.min.js" src="js/lib/require.js"></script>
 </head>
 <body>
-
-<div class="wrapper">
-	<h1>Who Would You Not Want as a Neighbour?</h1>
-	<div id="controller">
+	<div class="wrapper">
+		<h1>Who Would You Not Want as a Neighbour?</h1>
+		<div id="controller">
 		<div id="buttonbar" class="bar"></div>
 		<div id="timebar" class="bar"></div>
+		</div>
+		<div id="mainvis">
+		<div id="mapcontainer"></div>
+		<div id="bubblecontainer"></div>
+			<div id="infobox"></div> 
+			<svg id="bubbleview"></svg>
+		</div>
+		<div id="legend"></div>
+		<p class="footer">Data obtained by <a href="http://www.worldvaluessurvey.org/wvs.jsp">World Values Survey Association</a> | A project by <a href="https://github.com/giacomogiudice"> Giacomo Giudice <img src="img/GitHub.svg" alt="GitHub link"/></a> | Analytic trail is <a href="latex/Project2.pdf">here</a></p>
 	</div>
-	<div id="mapcontainer">
-	</div>
-	<div id="legend"></div>
-	<p class="footer">Data obtained by <a href="http://www.worldvaluessurvey.org/wvs.jsp">World Values Survey Association</a> | A project by <a href="https://github.com/giacomogiudice"> Giacomo Giudice <img src="img/GitHub.svg" alt="GitHub link"/></a></p>
-</div>
 </body>
 </html>
 

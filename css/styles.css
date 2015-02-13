@@ -24,8 +24,8 @@ h1 {
 
 .wrapper {
 	position: relative;
-	width: 1000px;
 	margin: 0 auto;
+	width: 1000px;
 }
 
 .swatch {
@@ -36,11 +36,26 @@ h1 {
 	overflow: hidden;
 }
 
+.arrow {
+	padding:0;
+	height: 1.4em;
+	vertical-align: middle;
+}
+
 .bar { 
-	float:left;
+	display: inline-block;
+}
+
+.hoverlabel {
+	padding: 4px;
+	border-radius: 4px;
+	background-color: #000000;
+	opacity: 0.75;
+	font-size: 0.75em;
+	color: #ffffff;
 }
 .ghost {
-	visibility: hidden;
+	opacity: 0;
 }
 
 .footer {
@@ -58,39 +73,49 @@ h1 {
 }
 
 #controller {
+	height: 100%;
 	width: 100%;
-	display: inline-block;
+	display: block;
 	background-color: white;
 	
 }
 
-#timebar {
-	float:right;
-}
-
-
-.arrow {
-	height: 1.3em;
-	vertical-align: middle;
+#mainvis {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	background-color: white;
+	
 }
 
 #mapcontainer {
-	position: relative;
-	background-color: white;
-	width: 80c%;
+	float: left;
 	height: 600px;
+	width: 80%;
 	margin: 0 auto;
 }
 
-.hoverlabel {
-	padding: 4px;
-	border-radius: 4px;
-	background-color: #000000;
-	opacity: 0.75;
-	font-size: 0.75em;
-	color: #ffffff;
+#bubblecontainer {
+	float: left;
+}
+
+
+#bubblecontainer {
+	float: left;
+	height: 100%;
+	width:20%;
+}
+
+#infobox {
+	text-align: center;
+	padding: 20px 10px;
+	font-weight: bold;
 }
 
 #legend {
+	display: block;
+	width: 100%;
+	position: relative;
 	overflow: hidden;
 }
